@@ -1,6 +1,10 @@
-const express = 'express';
+const express = require('express');
+
+const postDb = require('./postDb.js')
 
 const router = express.Router();
+
+router.use(express.json())
 
 router.get('/', (req, res) => {
 
